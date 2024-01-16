@@ -615,6 +615,10 @@ hr {
 /* modile devices responsive */
 @media screen and (max-width: 600px) {
     /* nav sytyle */
+    .nav-bar ul{
+        flex-direction: column;
+
+    }
 
     /* banner style */
     .banner-container {
