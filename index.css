@@ -190,19 +190,34 @@ ul {
 .destination-img-row1 {
     display: flex;
     gap: 20px;
+    max-width: 49%;
+    position: relative;
 }
+
+.Maldives {
+    position: absolute;
+    bottom: 35%;
+    left: 35%;
+    color: #FFF;
+    text-align: center;
+
+}
+
 
 .destination-img-row2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 20px;
+
 }
+
 
 .destination-img-row3 {
     display: flex;
     gap: 20px;
     margin-top: 20px;
+
 }
 
 /* extra style */
@@ -614,8 +629,9 @@ hr {
 
 /* modile devices responsive */
 @media screen and (max-width: 600px) {
+
     /* nav sytyle */
-    .nav-bar ul{
+    .nav-bar ul {
         flex-direction: column;
 
     }
@@ -625,19 +641,6 @@ hr {
         width: 100%;
         background-position: center;
         background-size: cover;
-
-    }
-
-    /* forme style */
-    .banner-description {
-        margin-bottom: 0px;
-    }
-
-    .form-info input {
-        display: block;
-    }
-    .form-info, .form-text{
-        margin-bottom: 10px;
     }
 
     .banner-title {
@@ -647,13 +650,27 @@ hr {
     }
 
     .banner-description {
+        margin-bottom: 0px;
         font-size: 14px;
-        margin-left: 50px;
-        width: 304px;
+        margin-left: 10px;
+        padding: 0px;
     }
 
+    /* forme style */
+    .form-info input {
+        display: block;
+    }
+
+    .form-info,
+    .form-text {
+        margin-bottom: 10px;
+    }
+
+
+
     .banner-container {
-        padding: 16px 32px;
+        padding: 16px 25px;
+        text-align: center;
     }
 
     /* tours */
@@ -682,13 +699,11 @@ hr {
     /* extra style */
     .extra-container {
         flex-direction: column;
-
     }
 
     /* card style */
     .card-container {
         flex-direction: column;
-
     }
 
     .card-container2 {
@@ -707,7 +722,7 @@ hr {
 
     .discount-description,
     .card-destination {
-        font-size: 10px;
+        font-size: 18px;
     }
 
     .picture1,
@@ -723,8 +738,14 @@ hr {
     .text2,
     .text3 {
         margin: 16px;
-        width: 303px;
-        height: 297px;
+        width: 403px;
+        height: 307px;
+        flex-wrap: wrap;
+    }
+
+    .bonus-description {
+        flex-wrap: wrap;
+        width: 254px;
     }
 
     /* newsletter */
