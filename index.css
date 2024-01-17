@@ -115,7 +115,8 @@
     width: 174px;
     height: 52px;
 }
-.form-info input{
+
+.form-info input {
     padding: 2px;
 
 }
@@ -191,20 +192,67 @@ ul {
     gap: 20px;
 }
 
-.destination-img-row2
- {
+.destination-img-row2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 20px;
-
-    
 }
-.destination-img-row3{
+
+.destination-img-row3 {
     display: flex;
     gap: 20px;
     margin-top: 20px;
 }
+
+/* extra style */
+.extra-container {
+    display: flex;
+    gap: 20px;
+}
+
+.extra1,
+.extra2,
+.extra3 {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    text-align: center;
+}
+
+.same-size {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.same-text {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.extra-container img {
+    width: 50px;
+    height: 50px;
+}
+
+.extra1:hover {
+    background-color: aquamarine;
+}
+
+.extra2:hover {
+    background-color: aquamarine;
+}
+
+.extra3:hover {
+    background-color: aquamarine;
+}
+
+
 
 /* card style */
 .card {
@@ -218,7 +266,8 @@ ul {
 
 
 }
-.card-rakib{
+
+.card-rakib {
     padding: 25px;
 
 }
@@ -274,7 +323,8 @@ ul {
     padding: 32px;
 
 }
-.card-destination3{
+
+.card-destination3 {
     width: 486px;
     color: #5A5A5D;
     font-family: Mulish;
@@ -371,6 +421,7 @@ ul {
 .sub-nav ul {
     display: flex;
 }
+
 .sub-nav li {
     list-style: none;
     margin-right: 40px;
@@ -412,7 +463,7 @@ ul {
     font-size: 20px;
     font-weight: 800;
     border: 0;
-    
+
 }
 
 /* newsletter section */
@@ -530,7 +581,8 @@ ul {
     font-weight: 400;
     line-height: 26px;
 }
-.icon img{
+
+.icon img {
     margin-left: 500px;
 
 }
@@ -563,43 +615,53 @@ hr {
 /* modile devices responsive */
 @media screen and (max-width: 600px) {
     /* nav sytyle */
+    .nav-bar ul{
+        flex-direction: column;
+
+    }
 
     /* banner style */
-    .banner-container{
+    .banner-container {
         width: 100%;
         background-position: center;
         background-size: cover;
-        
+
     }
 
-   /* forme style */
-   .banner-description{
-    margin-bottom: 0px;
-   }
-   .form-info input{
-    display: block;
-    gap: 20px;
-}
-.banner-title{
-    font-size: 22px;
-    margin-top: 32px;
-    padding: 0;
-}
-.banner-description{
-    font-size: 14px;
-    margin-left: 50px;
-    width: 304px;
-}
-.banner-container{
-    padding: 16px 32px;
-}
+    /* forme style */
+    .banner-description {
+        margin-bottom: 0px;
+    }
 
+    .form-info input {
+        display: block;
+    }
+    .form-info, .form-text{
+        margin-bottom: 10px;
+    }
+
+    .banner-title {
+        font-size: 22px;
+        margin-top: 32px;
+        padding: 0;
+    }
+
+    .banner-description {
+        font-size: 14px;
+        margin-left: 50px;
+        width: 304px;
+    }
+
+    .banner-container {
+        padding: 16px 32px;
+    }
 
     /* tours */
     .Popular-Tours {
         flex-direction: column;
     }
-    .tours-img img{
+
+    .tours-img img {
         width: 100%;
     }
 
@@ -608,7 +670,8 @@ hr {
     .destination-img-row3 {
         flex-direction: column;
     }
-    .destination img{
+
+    .destination img {
         width: 100%;
     }
 
@@ -616,6 +679,11 @@ hr {
         grid-template-columns: auto;
     }
 
+    /* extra style */
+    .extra-container {
+        flex-direction: column;
+
+    }
 
     /* card style */
     .card-container {
@@ -625,7 +693,55 @@ hr {
 
     .card-container2 {
         width: 520px;
+    }
 
+    /* descount */
+    .deals-discounts {
+        margin-top: 20px;
+    }
+
+    .discount-title,
+    .card-title {
+        font-size: 20px;
+    }
+
+    .discount-description,
+    .card-destination {
+        font-size: 10px;
+    }
+
+    .picture1,
+    .picture2,
+    .picture3 {
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 10px;
+    }
+
+    .text1,
+    .text2,
+    .text3 {
+        margin: 16px;
+        width: 303px;
+        height: 297px;
+    }
+
+    /* newsletter */
+    .newsletter-section {
+        flex-direction: column;
+    }
+
+    /* footer */
+    .icon img {
+        margin-left: 130px;
+
+    }
+
+    hr {
+        width: 472px;
+        height: 1px;
+        background: rgba(19, 19, 24, 0.10);
     }
 
 
